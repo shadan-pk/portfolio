@@ -1,0 +1,68 @@
+.logo{
+    width: 200px;
+    display: flex;
+}
+
+.logo a img{
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+
+.content_spcae_between{
+    justify-content: space-around;
+}
+
+.ig_logo{
+    width: 40px;
+}
+
+.ig_logo_container{
+    width: 1px;
+}
+
+#photo_visible_id {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    overflow: visible;
+
+}
+
+#photo_visible_id #photo_visible{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    transition: all 0.5s ease;
+
+}
+/* .card img:hover{
+    transition: all 0.5s ease;
+
+} */
+
+    /* #photo_visible_id:hover #photo_visible {
+        right: -100%;
+        top: -200px;
+        
+    } */
+
+.hover_div{
+    opacity: 0;
+}
+.hover_div:hover{
+    opacity: 1;
+    transition: all 0.5s ease;
+
+}
+
+.hover_div:hover ~ .hover_div_img{
+    right: -100%;
+    top: 0;
+    opacity: 100%;
+    z-index: -1;
+    transition: all 0.5s ease;
+    
+}
