@@ -1,3 +1,211 @@
+:root {
+    --color-bg1: #FBF6E9;
+    --color-bg2: #E3F0AF;
+    --color-primary: #5DB996;
+    --color-secondary: #118B50;
+}
+
+
+
+/* top area background */
+
+.slider-area {
+    background-color: var(--color-bg1);
+}
+
+/* center top menu options */
+
+.header-area .menu-wrapper .main-menu ul li a {
+    color: #118B50;
+    font-weight: 800;
+}
+
+/* center top menu options hover option*/
+
+.header-area .menu-wrapper .main-menu ul li:hover > a {
+    color: #5DB996;
+}
+
+/* button top right */
+
+.header-btn {
+    background-image: linear-gradient(to left, #E3F0AF, #5DB996, #118B50);
+}
+.header-btn:hover {
+    background-image: linear-gradient(to left, #E3F0AF, #5DB996, #118B50);
+}
+
+/* shadan pk bottom */
+
+.slider-area .hero__caption p {
+    color: #118B50;
+    font-weight: 800;
+}
+
+.about-area{
+    /* margin-right: 200px; */
+    box-shadow: 0 -1px 40px rgba(0, 0, 0, 0.201);
+}
+
+.about-area::before{
+    background-color: var(--color-bg1);
+    right: -100px;
+    height: 100%;
+    box-shadow: 0 -1px 40px rgba(0, 0, 0, 0.201);
+
+}
+
+
+/* about me heading */
+
+.section-tittle h2 {
+    color: #118B50;
+    font-weight: 800;
+}
+
+/* about me para */
+
+p {
+    color: #118B50;
+    font-weight: 800;
+}
+
+
+.expeience-text {
+    margin-right: 40px;
+}
+
+/* about bottom */
+
+.about-area .experience span {
+    color: var(--color-secondary);
+    margin-bottom: 0px;
+}
+
+/* about bottom info*/
+p {
+    color: #000000;
+    font-size: 30px;
+
+}
+
+b, sup, sub, u, del {
+    color: #118B50;
+    font-weight: 800;
+}
+
+.about-area .about-caption p {
+    color: #000000;
+    font-size: 20px;
+    /* margin-right: 100px; */
+}
+
+/* Expeience area background */
+
+.may-about {
+    background-color: var(--color-secondary);
+}
+
+/* experience heading */
+
+.section-tittle2 h2 {
+    color: var(--color-bg1);
+    font-size: 80px;
+}
+
+/* experience date */
+
+.may-about .single-about .tittle-experience h3 {
+    color: var(--color-bg1);
+    font-weight: bold;
+}
+
+/* experience place */
+
+.may-about .single-about .experience-link a {
+    color: var(--color-bg1);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Experties area background */
+
+.section-bg1 {
+    background: #E3F0AF;
+}
+
+/* Experties card background */
+
+.our-services .single-services {
+    background: #FBF6E9;
+    /* padding: 30px; */
+    border-radius: 10px;
+    drop-shadow: 0px 10px 10px rgba(0, 0, 0, 0.50);
+}
+
+
+
+/* all heading default color */
+
+/* h1, h2, h3, h4, h5, h6 {
+    color: #118B50;
+} */
+
+/* Experties card heading */
+
+.our-services .single-services .services-cap h5 {
+    color: #118B50;
+    font-weight: 500;
+}
+
+/* Expertise card para */
+
+.our-services .single-services .services-cap p {
+    color: var(--color-secondary);
+}
+
+/* Experties card button */
+
+/* .genric-btn {
+    background-color: #118B50;
+} */
+
+/* Experties card button text*/
+
+.genric-btn.primary {
+    color: #ffffff;
+    background-color: #118B50;
+}
+
+/* about me background */
+
+.footer-wrappr {
+    background-color: var(--color-secondary);
+}
+
+/* footer heading */
+
+.wantToWork-area .wantToWork-caption h2 {
+    color: var(--color-bg1);
+}
+
+/* footer button  */
+
+.white-btn {
+    background-color: #FBF6E9;
+    color: #118B50;
+}
+
+
+
+
+
+
+
+
+
+
+
 .logo{
     width: 200px;
     display: flex;
