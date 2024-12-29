@@ -49,8 +49,8 @@
 
 .about-area::before{
     background-color: var(--color-bg1);
-    right: -100px;
-    height: 100%;
+    /* right: -100px;
+    height: 100%; */
     box-shadow: 0 -1px 40px rgba(0, 0, 0, 0.201);
 
 }
@@ -110,7 +110,7 @@ b, sup, sub, u, del {
 
 .section-tittle2 h2 {
     color: var(--color-bg1);
-    font-size: 80px;
+    font-size: 50px;
 }
 
 /* experience date */
