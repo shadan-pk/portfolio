@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style_main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header id="home">
@@ -23,8 +24,8 @@
                             <nav>
                                 <ul id="navigation">
                                     <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="protfolio.html">Protfolio</a></li>
+                                    <li><a href="#about-section">About</a></li>
+                                    <li><a href="#services">Protfolio</a></li>
                                     <!-- <li><a href="contact.html">Contact</a></li> -->
                                 </ul>
                             </nav>
@@ -65,7 +66,7 @@
             </div>
         </div>
     </div>
-    <section class="about-area section-padding40">
+    <section class="about-area section-padding40" id="about-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-10">
@@ -194,7 +195,7 @@
             </div>
         </div>
     </div>
-    <div class="our-services pt-top section-bg1">
+    <div class="our-services pt-top section-bg1" id = "services">
         <div class="container">
             <div class="rwo">
                 <div class="col-xl-12">
@@ -210,7 +211,7 @@
                             <h5>Graphic<br> Designing</h5>
                             <p>Expertise in making Poster for IEEE MEA SB</p>
                         </div>
-                        <a href="#" class="genric-btn primary">Take me There</a>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -219,7 +220,56 @@
                             <h5>Web<br>Developer</h5>
                             <p>Made severl website as part of Steyp, an initiative of Talrop</p>
                         </div>
-                        <a href="#" class="genric-btn primary">Take me There</a>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-cap " >
+                            <h5>Video<br>Editing</h5>
+                            <p>Expertise in making and editing videos</p>
+
+                        </div>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-cap " >
+                            <h5>Google Suits</h5>
+                            <p>Expertise in using Google Suite,including Docs,Sheets etc.</p>
+                        </div>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-cap">
+                            <h5>Tools</h5>
+                            <p>Photoshop, Figma, Microsoft Suite</p>
+                        </div>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-cap">
+                            <h5>Languages</h5>
+                            <p>Java, C/C++, SQL, JavaScript, HTML/CSS</p>
+                        </div>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-cap">
+                            <h5>Developer Tools</h5>
+                            <p>Git, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse</p>
+                        </div>
+                        <!-- <a href="#" class="genric-btn primary">Take me There</a> -->
                     </div>
                 </div>
             </div>
@@ -319,8 +369,28 @@
         </div>
     </footer>
     <!-- Scroll Up -->
-    <div id="back-top" >
+    <!-- <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-    </div>
+    </div> -->
+
+    <script>   
+    $(document).ready(function(){
+        $('a[href="#about-section"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#about-section').offset().top
+            }, 800);
+        });
+    });
+    $(document).ready(function(){
+        $('a[href="#services"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#services').offset().top
+            }, 1500);
+        });
+    });
+
+    </script>
 </body>
 </html>

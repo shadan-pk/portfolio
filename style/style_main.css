@@ -5,7 +5,9 @@
     --color-secondary: #118B50;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* top area background */
 
@@ -55,8 +57,12 @@
 
 }
 
-
 /* about me heading */
+
+.section-tittle h2 {
+    color: #118B50;
+    font-weight: 800;
+}
 
 /* about me para */
 
@@ -157,6 +163,7 @@ b, sup, sub, u, del {
 
 .our-services .single-services .services-cap p {
     color: var(--color-secondary);
+    width: 280px;
 }
 
 /* Experties card button */
@@ -192,10 +199,32 @@ b, sup, sub, u, del {
 }
 
 
+.footer-social img{
+    height: 100%;
+    width: 100%;
+}
 
+/* style to scroll bar */
 
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
 
+::-webkit-scrollbar-track {
+    background: #FBF6E9; /* Background of the scrollbar track */
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: #5DB996; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #000000; /* Border around the scrollbar thumb */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #5DB996 #FBF6E9; /* Color of the scrollbar thumb and track */
+}
 
 
 
