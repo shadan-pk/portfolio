@@ -1,8 +1,10 @@
 :root {
-    --color-bg1: #FBF6E9;
-    --color-bg2: #E3F0AF;
-    --color-primary: #5DB996;
-    --color-secondary: #118B50;
+    --color-bg1: #F8FAFC;
+    --color-bg2: #E0F2FE;
+    --color-primary: #0EA5E9;
+    --color-secondary: #0369A1;
+    --color-dark: #1E293B;
+    --color-accent: #0284C7;
 }
 
 html {
@@ -18,59 +20,58 @@ html {
 /* center top menu options */
 
 .header-area .menu-wrapper .main-menu ul li a {
-    color: #118B50;
+    color: var(--color-secondary);
     font-weight: 800;
 }
 
 /* center top menu options hover option*/
 
 .header-area .menu-wrapper .main-menu ul li:hover > a {
-    color: #5DB996;
+    color: var(--color-primary);
 }
 
 /* button top right */
 
 .header-btn {
-    background-image: linear-gradient(to left, #E3F0AF, #5DB996, #118B50);
+    background-image: linear-gradient(to right, #0EA5E9, #0284C7, #0369A1);
+    color: white;
+    transition: all 0.3s ease;
 }
 .header-btn:hover {
-    background-image: linear-gradient(to left, #E3F0AF, #5DB996, #118B50);
+    background-image: linear-gradient(to right, #0284C7, #0369A1, #075985);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
 
 /* shadan pk bottom */
 
 .slider-area .hero__caption p {
-    color: #118B50;
+    color: var(--color-secondary);
     font-weight: 800;
 }
 
 .about-area{
-    /* margin-right: 200px; */
-    box-shadow: 0 -1px 40px rgba(0, 0, 0, 0.201);
+    box-shadow: 0 -1px 40px rgba(3, 105, 161, 0.1);
 }
 
 .about-area::before{
     background-color: var(--color-bg1);
-    /* right: -100px;
-    height: 100%; */
-    box-shadow: 0 -1px 40px rgba(0, 0, 0, 0.201);
-
+    box-shadow: 0 -1px 40px rgba(3, 105, 161, 0.1);
 }
 
 /* about me heading */
 
 .section-tittle h2 {
-    color: #118B50;
+    color: var(--color-secondary);
     font-weight: 800;
 }
 
 /* about me para */
 
 p {
-    color: #118B50;
+    color: var(--color-dark);
     font-weight: 800;
 }
-
 
 .expeience-text {
     margin-right: 40px;
@@ -85,23 +86,21 @@ p {
 
 /* about bottom info*/
 p {
-    color: #000000;
+    color: var(--color-dark);
     font-size: 30px;
-
 }
 
 b, sup, sub, u, del {
-    color: #118B50;
+    color: var(--color-secondary);
     font-weight: 800;
 }
 
 .about-area .about-caption p {
-    color: #000000;
+    color: var(--color-dark);
     font-size: 20px;
-    /* margin-right: 100px; */
 }
 
-/* Expeience area background */
+/* Experience area background */
 
 .may-about {
     background-color: var(--color-secondary);
@@ -110,76 +109,108 @@ b, sup, sub, u, del {
 /* experience heading */
 
 .section-tittle2 h2 {
-    color: var(--color-bg1);
+    color: white;
     font-size: 50px;
 }
 
 /* experience date */
 
+.may-about .single-about {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.may-about .single-about:last-of-type {
+    border-bottom: none;
+}
+
 .may-about .single-about .tittle-experience h3 {
-    color: var(--color-bg1);
+    color: white;
     font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.may-about .single-about .tittle-experience p {
+    color: var(--color-bg2);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
 }
 
 /* experience place */
 
 .may-about .single-about .experience-link a {
-    color: var(--color-bg1);
+    color: white;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-/* Experties area background */
+.may-about .single-about .experience-link a:hover {
+    color: var(--color-bg2);
+}
+
+.may-about .single-about .experience-desc p {
+    color: var(--color-bg2) !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Expertise area background */
 
 .section-bg1 {
-    background: #E3F0AF;
+    background: var(--color-bg2);
 }
 
-/* Experties card background */
+/* Expertise card background */
 
 .our-services .single-services {
-    background: #FBF6E9;
-    /* padding: 30px; */
+    background: white;
     border-radius: 10px;
-    drop-shadow: 0px 10px 10px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 20px rgba(3, 105, 161, 0.15);
+    transition: all 0.3s ease;
 }
 
+.our-services .single-services:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 30px rgba(3, 105, 161, 0.25);
+}
 
-
-/* all heading default color */
-
-/* h1, h2, h3, h4, h5, h6 {
-    color: #118B50;
-} */
-
-/* Experties card heading */
+/* Expertise card heading */
 
 .our-services .single-services .services-cap h5 {
-    color: #118B50;
-    font-weight: 500;
+    color: var(--color-secondary);
+    font-weight: 600;
 }
 
 /* Expertise card para */
 
 .our-services .single-services .services-cap p {
-    color: var(--color-secondary);
+    color: var(--color-dark);
     width: 280px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-/* Experties card button */
-
-/* .genric-btn {
-    background-color: #118B50;
-} */
-
-/* Experties card button text*/
+/* Expertise card button text*/
 
 .genric-btn.primary {
-    color: #ffffff;
-    background-color: #118B50;
+    color: white;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
 }
 
-/* about me background */
+.genric-btn.primary:hover {
+    background-color: var(--color-secondary);
+}
+
+/* footer background */
 
 .footer-wrappr {
     background-color: var(--color-secondary);
@@ -188,47 +219,59 @@ b, sup, sub, u, del {
 /* footer heading */
 
 .wantToWork-area .wantToWork-caption h2 {
-    color: var(--color-bg1);
+    color: white;
 }
 
-/* footer button  */
+/* footer button */
 
 .white-btn {
-    background-color: #FBF6E9;
-    color: #118B50;
+    background-color: white;
+    color: var(--color-secondary);
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
+.white-btn:hover {
+    background-color: var(--color-bg2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
 
 .footer-social img{
     height: 100%;
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
 }
 
 /* style to scroll bar */
 
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #FBF6E9; /* Background of the scrollbar track */
+    background: var(--color-bg1);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #5DB996; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Roundness of the scrollbar thumb */
-    border: 3px solid #000000; /* Border around the scrollbar thumb */
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: 3px solid var(--color-bg1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-secondary);
 }
 
 /* For Firefox */
 html {
-    scrollbar-width: thin; /* Width of the scrollbar */
-    scrollbar-color: #5DB996 #FBF6E9; /* Color of the scrollbar thumb and track */
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-bg1);
 }
-
-
-
-
 
 .logo{
     width: 200px;
@@ -258,7 +301,6 @@ html {
     height: 50px;
     position: relative;
     overflow: visible;
-
 }
 
 #photo_visible_id #photo_visible{
@@ -268,18 +310,7 @@ html {
     top: -200px;
     right: 0;
     transition: all 0.5s ease;
-
 }
-/* .card img:hover{
-    transition: all 0.5s ease;
-
-} */
-
-    /* #photo_visible_id:hover #photo_visible {
-        right: -100%;
-        top: -200px;
-        
-    } */
 
 .hover_div{
     opacity: 0;
@@ -287,7 +318,6 @@ html {
 .hover_div:hover{
     opacity: 1;
     transition: all 0.5s ease;
-
 }
 
 .hover_div:hover ~ .hover_div_img{
@@ -296,5 +326,137 @@ html {
     opacity: 100%;
     z-index: -1;
     transition: all 0.5s ease;
-    
+}
+
+/* Additional professional touches */
+
+.hero__caption h1 {
+    color: var(--color-dark);
+}
+
+.hero-contact p a {
+    transition: all 0.3s ease;
+}
+
+.hero-contact p a:hover {
+    color: var(--color-primary) !important;
+}
+
+.section-tittle.mb-75.text-center h2 {
+    color: var(--color-secondary);
+}
+
+.about-img img {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(3, 105, 161, 0.15);
+}
+
+.single-about {
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.single-about:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.experience-desc p {
+    color: var(--color-bg2) !important;
+    font-weight: 500 !important;
+}
+
+/* Projects Section */
+.projects-area {
+    background: var(--color-bg2);
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(3, 105, 161, 0.15);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(3, 105, 161, 0.25);
+}
+
+.project-card h3 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.project-tech {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.project-date {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.project-desc {
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Achievements Section */
+.achievements-area {
+    background: white;
+}
+
+.achievement-list {
+    background: var(--color-bg1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(3, 105, 161, 0.1);
+}
+
+.achievement-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(3, 105, 161, 0.15);
+}
+
+.achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.achievement-item h4 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.achievement-item p {
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.achievements-area .section-tittle h2 {
+    color: var(--color-secondary);
 }
